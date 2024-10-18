@@ -1,0 +1,5 @@
+bg image autor: https://unsplash.com/fr/@andreabuccelli
+bg image link: https://unsplash.com/fr/photos/femme-en-robe-academique-noire-AqFetkKjCC8
+
+create account button color: #596D48;
+input light border color: #E5E7EB (default)

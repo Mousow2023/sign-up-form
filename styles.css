@@ -1,0 +1,194 @@
+:root {
+    --spacing: 2rem;
+    --button-color: #596D48;
+    --input-border: #E5E7EB;
+}
+
+/* Norse Bold */
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/webfontkit-20241018-153904/norse-bold-webfont.woff2') format('woff2'),
+        url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Roboto Light */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/webfontkit-20241018-144018/roboto-light-webfont.woff2') format('woff2'),
+        url('fonts/webfontkit-20241018-144018/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+}
+
+/* Roboto Regular */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/webfontkit-20241018-144018/roboto-regular-webfont.woff2') format('woff2'),
+        url('fonts/webfontkit-20241018-144018/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+/* Roboto Medium */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/webfontkit-20241018-144018/roboto-medium-webfont.woff2') format('woff2'),
+        url('fonts/webfontkit-20241018-144018/roboto-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    /* Medium */
+    font-style: normal;
+}
+
+/* Roboto Bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/webfontkit-20241018-144018/roboto-bold-webfont.woff2') format('woff2'),
+        url('fonts/webfontkit-20241018-144018/roboto-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    /* Bold */
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.img-container img {
+    height: 100%;
+}
+
+.text-container {
+    background-color: #f8f8f8f6;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+    padding-left: var(--spacing);
+}
+
+.headings {
+    margin-bottom: var(--spacing);
+    width: 500px;
+    min-width: 700px;
+}
+
+.headings span {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-rows-wrapper {
+    padding: 1rem 0;
+    background-color: #fff;
+    margin-left: calc(-1 *var(--spacing));
+    padding-left: var(--spacing);
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    margin-bottom: 1rem;
+}
+
+form h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+form .form-row {
+    display: flex;
+    width: 70%;
+    column-gap: 20%;
+    padding: 0.5rem 0;
+    margin-bottom: 0.3rem;
+}
+
+.form-row div {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    /* Remove the default black border */
+    border: 1px solid blue !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+.img-container {
+    position: relative;
+}
+
+.logo {
+    font-family: "Norse";
+    font-size: 45px;
+}
+
+.img-container .logo {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    width: 100%;
+    background-color: #00000093;
+    height: 120px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+button {
+    background-color: var(--button-color);
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    width: 200px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+p a:hover,
+button:hover,
+p a:hover,
+button:active {
+    background-color: #394b29;
+    color: #fff;
+}
